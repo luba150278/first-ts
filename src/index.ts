@@ -2,15 +2,14 @@ const world = 'world';
 
 interface IProps {
   who: string;
-  how: number;
   func(a: number, b: number): number;
+  how?: 3;
 }
 const func = (a: number, b: number): number => {
   return a + b;
 };
 const props: IProps = {
   who: 'world',
-  how: 3,
   func,
 };
 
